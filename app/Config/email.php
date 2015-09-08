@@ -50,7 +50,7 @@ class EmailConfig {
         'host' => 'ssl://smtp.gmail.com',
         'port' => 465,
         'username' => 'med.has.kostali@gmail.com',
-        'password' => 'smis4b03$$',
+        'password' => '************',
 		'transport' => 'Smtp',
 		
     );
