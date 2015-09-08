@@ -165,7 +165,7 @@ public function getNotif(){
 
             if ($this->request->data['User']['remember'] == 1) {
         // After what time frame should the cookie expire
-        $cookieTime = "12 months"; // You can do e.g: 1 week, 17 weeks, 14 days
+        $cookieTime = "2 months"; // You can do e.g: 1 week, 17 weeks, 14 days
  
     // remove "remember me checkbox"
     unset($this->request->data['User']['remember']);
@@ -182,19 +182,7 @@ public function getNotif(){
             $this->Session->setFlash(__('Votre nom d\'user ou mot de passe sont incorrects.'));
         }
     }
-    //if ($this->request->data['User']['remember'] == 1) {
-        // After what time frame should the cookie expire
-        //$cookieTime = "12 months"; // You can do e.g: 1 week, 17 weeks, 14 days
- 
-    // remove "remember me checkbox"
-    //unset($this->request->data['User']['remember']);
-                 
-    // hash the user's password
-    //$this->request->data['User']['password'] = $this->Auth->password($this->request->data['User']['password']);
-                 
-    // write the cookie
-   // $this->Cookie->write('remember', $this->request->data['User'], true, $cookieTime);
-//}
+    
     }
 
 
@@ -230,6 +218,7 @@ public function initDB() {
 	$this->Acl->allow($group, 'controllers/Users/logout');
     $this->Acl->allow($group, 'controllers/Posts');
     $this->Acl->allow($group, 'controllers/Widgets');
+    $this->Acl->allow($group, 'controllers/Notifications/index');
 
     // Autorise l'accès aux actions add et edit des posts widgets pour les utilisateurs de ce groupe
     $group->id = 3;
@@ -238,6 +227,7 @@ public function initDB() {
     $this->Acl->allow($group, 'controllers/Posts/edit');
     $this->Acl->allow($group, 'controllers/Widgets/add');
     $this->Acl->allow($group, 'controllers/Widgets/edit');
+    $this->Acl->allow($group, 'controllers/Notifications/index');
 
     // Permet aux utilisateurs classiques de se déconnecter
     $this->Acl->allow($group, 'controllers/users/logout');
