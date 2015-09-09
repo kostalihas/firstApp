@@ -47,9 +47,12 @@ class AppController extends Controller {
         ),
         'Session',
         'Cookie'
+<<<<<<< HEAD
         
 
 		
+=======
+>>>>>>> 6fbc007fe205086b5cfe5d9f6723e0c1a766d801
 		
     );
 
