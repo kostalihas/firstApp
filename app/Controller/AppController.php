@@ -33,6 +33,8 @@ App::uses('CakePdf','CakePdf.Pdf');
  */
 class AppController extends Controller {
 
+    
+
  public $components = array(
        'RequestHandler' => array(
         'viewClassMap' => array('pdf' => 'CakePdf.Pdf')
@@ -43,7 +45,8 @@ class AppController extends Controller {
                 'Actions' => array('actionPath' => 'controllers')
             )
         ),
-        'Session'
+        'Session',
+        'Cookie'
         
 
 		
@@ -65,7 +68,7 @@ class AppController extends Controller {
     if (!$this->Auth->loggedIn() && $this->Cookie->read('remember')) {
          $cookie = $this->Cookie->read('remember');
  
-            // $this->loadModel('User'); // If the User model is not loaded already
+            
          $user = $this->User->find('first', array(
                 'conditions' => array(
                     'User.username' => $cookie['username'],

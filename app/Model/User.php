@@ -44,7 +44,7 @@ public $displayField='username';
         		'required'=>'notEmpty', 
         		'match'=>array(
         		 'rule' => 'validatePasswdConfirm',
-        		  'message' => 'Passwords do not match' ) ),
+        		  'message' => 'not match Passwords!' ) ),
 
 		
 			
