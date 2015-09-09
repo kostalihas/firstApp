@@ -15,12 +15,12 @@
                     </span>
                 </div>
             </div>
-        
+        <script type="text/javascript" src="/aclbake/app/webroot/js/moment.js"></script>
          <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-     <script type="text/javascript" src="/aclbake/app/webroot/js/jquery.min.js"></script>
+    <!-- <script type="text/javascript" src="/aclbake/app/webroot/js/jquery.min.js"></script> -->
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    <script src="https://raw.githubusercontent.com/moment/moment/develop/moment.js"></script>
+    
     <script src="https://raw.githubusercontent.com/moment/moment/master/locale/fr.js"></script>
     <script src="https://raw.githubusercontent.com/Eonasdan/bootstrap-datetimepicker/master/build/js/bootstrap-datetimepicker.min.js"></script>
     <script>
