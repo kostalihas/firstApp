@@ -27,16 +27,19 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
 
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css" rel="stylesheet">
-    <link href="https://raw.githubusercontent.com/Eonasdan/bootstrap-datetimepicker/master/build/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+    
+   
+    
+    <link rel="stylesheet" type="text/css" href="/aclbake/css/bootstrap-theme.min.css" />
 
+    <script type="text/javascript" src="/aclbake/app/webroot/js/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="/aclbake/js/bootstrap.min.js"></script>
     
 	<?php
 		echo $this->Html->meta('icon');
 
-	echo $this->Html->css(array('rapido.css','bootstrap.css','bootstrap-datetimepicker.css','croogo.css','thickbox.css','datepicker.css'));
-        echo $this->Html->script(array('prettify.js','main.js','bootstrap-datetimepicker.min.js','bootstrap-datetimepicker.js','bootstrap.min.js',
-        	'bootstrap-datepicker.js','bootstrap.js','npm.js','jquery.min.js'));
+	echo $this->Html->css(array('bootstrap.css','bootstrap-datetimepicker.css','croogo.css','datepicker.css'));
+        echo $this->Html->script(array('bootstrap-datepicker.js','bootstrap.js','croogo-bootstrap.js'));
 		
 		
 
